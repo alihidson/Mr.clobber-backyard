@@ -7606,6 +7606,7 @@ int main() {
         al_draw_scaled_bitmap(home, 0, 0, originalWidth_H, originalHeight_H, homeX, homeY, newWidth_H, newHeight_H, 0);
 
 
+        // for display traps
         for(int i=0; i<4; i++) {
             if (cats[i].x == traps[0].x && cats[i].y == traps[0].y) {
                 draw_scale_bitmap_trap(trap, traps[0]);
@@ -7632,9 +7633,6 @@ int main() {
                 draw_scale_bitmap_trap(trap, traps[7]);
             }
         }
-
-
-
 
         al_flip_display();
 
